@@ -1,0 +1,99 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #ffffff;
+}
+
+header {
+	clear: both;
+}
+
+.wrapper {
+	width: 960px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+#logo {
+	width: 225px;
+	margin: 0;
+    float: left;
+}
+
+#facebook-small {
+    float: right; 
+    padding-top: 65px;
+    margin-left: 20px;
+}
+
+#twitter-small {
+    float: right; 
+    padding-top: 65px;
+    
+}
+
+#top-contact {
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+    margin: 65px 5px 5px 25px;
+    padding: 10px 5px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: green;
+}
+
+#top-contact li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 8px;
+    color: white;
+}
+
+#top-contact a {
+    color: white;
+}
+
+nav {
+	width: 960px;
+	height: 50px;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+	background: #c68c53;
+    clear: both;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 150px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: white;
+	height: 50px;
+	margin: 0px 15px;
+	padding: 16px 0px 0px 0px;
+}
+
+nav ul li:hover {
+	background: white;
+	color: green;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+.temp-title h1 {
+	text-align: center;
+	margin: 20px;
+	color: red;
+}
