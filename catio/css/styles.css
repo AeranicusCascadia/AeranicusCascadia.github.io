@@ -4,22 +4,48 @@
 }
 
 body {
-	background: #ffffff;
+	background: white;
 }
 
 header {
 	clear: both;
 }
 
+main {
+    float:left;
+    width: 570px;
+}
+
+p {
+    margin: 0 auto;
+    padding: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.4; 
+}
+
+
+aside {
+    float: right;
+    width: 380px;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    padding-left: 5px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #29627e;
+}
+
 .wrapper {
 	width: 960px;
-	height: 600px;
-	margin: 0 auto;
+	height: auto;
+	margin: 0 auto;   
 }
 
 #logo {
 	width: 225px;
-	margin: 0;
+	
+    margin-top: 5px;
+    margin-bottom: 15px;
     float: left;
 }
 
@@ -32,7 +58,6 @@ header {
 #twitter-small {
     float: right; 
     padding-top: 65px;
-    
 }
 
 #top-contact {
@@ -57,6 +82,10 @@ header {
     color: white;
 }
 
+#top-contact a:hover {
+    color: yellow;
+}
+
 nav {
 	width: 960px;
 	height: 50px;
@@ -68,6 +97,7 @@ nav {
 
 nav ul {
 	list-style-type: none;
+    height: 50px;
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
@@ -76,24 +106,182 @@ nav ul {
 nav ul li {
 	display: inline-block;
 	width: 150px;
+    height: 35px;
 	font-family: Verdana, Geneva, sans-serif;
 	color: white;
-	height: 50px;
 	margin: 0px 15px;
-	padding: 16px 0px 0px 0px;
+	padding-top: 13px;
+    
 }
 
 nav ul li:hover {
+    height: 37px;
 	background: white;
 	color: green;
 }
 
 nav ul li a {
 	text-decoration: none;
+    color: black;
+}
+
+nav ul li a:visited {
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0px 15px 0px;
+}
+
+hr {
+    margin: 4px 0px 8px 0px;
+    border-width: 2px;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 .temp-title h1 {
 	text-align: center;
 	margin: 20px;
 	color: red;
+}
+
+#hero-image-container {
+    width: 960px;
+    background: #3366cc;
+}
+
+#hero-image-container > img {
+    display: block;
+    width: 620px;
+    margin: 0 auto;
+}
+
+.trio-wrapper {
+    width: 960px;
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    grid-gap: 15px;
+    padding: 10px 0px;  
+}
+
+.trio-element {
+    display: inline-block;
+    width: 310px;
+    border-radius: 12px;
+}
+
+.benefits-wrapper {
+    width: 800px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap 5px;
+}
+
+.benefits-item {
+    
+    height: 200px; 
+}
+
+.benefits-item h2 { 
+    text-align: left;
+    margin: 20px 10px 8px 23px;
+}
+
+
+.benefits-item p {
+    width: 350px;
+    margin: 4px auto;
+    padding: 2px;
+    color: black;
+}
+
+.a {
+    grid-column: 1/3;
+    grid-row: 1;
+    height: auto;
+    background: #c0d8d8;
+    color: black;
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 0px;
+    }
+
+    .b {
+        grid-column: 1;
+        grid-row: 2;
+        
+    }
+
+    .c {
+        grid-column: 2;
+        grid-row: 2;
+        background: #f0ffff;
+    }
+
+    .d {
+        grid-column: 1;
+        grid-row: 3;
+        background: #c1cdcd;
+     }
+
+    .e {
+    }
+
+    .f {
+    }
+
+    .g {
+        grid-column: 2;
+        grid-row: 4;
+        background: #eedfcc;
+    }
+
+    .h {
+        grid-column: 1;
+        grid-row: 5;
+        background: #f0ffff;
+    }
+
+    .i {
+    }
+
+    .j {
+    }
+
+    .k {
+        grid-column: 2;
+        grid-row: 6;
+        background: #c1cdcd;
+     }
+
+footer {
+	clear: both;
+	width: 960px;
+	height: 50px;
+	margin: 20px auto 25px auto;
+	background: #f0ead6;
+}
+
+footer ul {
+	list-style-type: none;
+	padding: 15px;
+	text-align: left;
+	border: 2px solid black;
+    border-radius: 12px;
+	
+}
+
+footer ul li {
+	display: inline;
+	margin: 0px 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+footer ul li a:hover {
+  color: green;
 }
