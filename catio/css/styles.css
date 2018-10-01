@@ -1,10 +1,22 @@
+// Final Project
+
 * {
 	margin: 0px;
 	padding: 0px;
 }
 
+.wrapper {
+	width: 960px;
+	height: auto;
+	margin: 15px auto;   
+    border: 2px solid #003366;
+    border-radius: 20px;
+    padding: 50px 50px 15px 50px;
+    background: white;
+}
+
 body {
-	background: white;
+	background: #D6D7BB;
 }
 
 header {
@@ -24,6 +36,17 @@ p {
     line-height: 1.4; 
 }
 
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 10px 5px 10px;
+    font-family: palatino, arial, sans-serif;
+}
+
+hr {
+    margin: 4px 0px 8px 0px;
+    border-width: 2px;
+}
+
 
 aside {
     float: right;
@@ -33,12 +56,6 @@ aside {
     padding-left: 5px;
     font-family: Verdana, Geneva, sans-serif;
     color: #29627e;
-}
-
-.wrapper {
-	width: 960px;
-	height: auto;
-	margin: 0 auto;   
 }
 
 #logo {
@@ -129,33 +146,32 @@ nav ul li a:visited {
     color: black;
 }
 
-h1 {
-    text-align: center;
-    margin: 20px 0px 15px 0px;
-}
-
-hr {
-    margin: 4px 0px 8px 0px;
-    border-width: 2px;
-    font-family: Verdana, Geneva, sans-serif;
-}
-
 .temp-title h1 {
 	text-align: center;
 	margin: 20px;
 	color: red;
 }
 
-#hero-image-container {
+.hero-image-container {
     width: 960px;
+    height: auto;
     background: #3366cc;
 }
 
-#hero-image-container > img {
+.hero-image-container #hero-image {
     display: block;
     width: 620px;
     margin: 0 auto;
 }
+
+.hero-image-container #about-splash {
+    display: block;
+    width: 620px;
+    margin: 0 auto;
+    float: left;
+    background: white;
+}
+
 
 .trio-wrapper {
     width: 960px;
@@ -170,6 +186,7 @@ hr {
     width: 310px;
     border-radius: 12px;
 }
+
 
 .benefits-wrapper {
     width: 800px;
@@ -285,3 +302,337 @@ footer ul li {
 footer ul li a:hover {
   color: green;
 }
+
+#products-wrapper {
+   width: 960px;
+   background: white;
+}
+
+#products-splash {
+    width: 580px;
+    height: 440px;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 85px;
+    border-radius: 12px;
+}
+
+#products-text {
+    width: 364px;
+    height: 440px;
+    background: white;
+    margin-left: 10px;
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 85px;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+}
+
+#products-text p {
+    margin: 0 auto;
+    padding: 10px 20px 10px 20px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.4; 
+}
+
+#products-text h3 {
+    text-align: left;
+    padding-left: 12px;
+}
+
+.custom-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 475px 475px;
+    width: 960px;
+    height: auto;
+    clear: both;
+}
+
+    .custom-item-a {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background: #c1cdcd;
+        border: 1px solid black;
+        border-radius: 12px;
+        margin: 5px;
+        padding-top: 1px;
+        padding-bottom: 25px;
+    }
+
+    .custom-item-b {
+        background: white;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: auto;
+    }    
+
+    .custom-item-b p {
+        font-style: italic;
+        color: #29627e;
+    }
+    
+    .custom-item-c {
+        background: white;
+        grid-column: 2/3;
+        grid-row: 2/4;
+        height: auto;
+    }
+
+    #custom-1 {
+        width: 480px;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 12px;
+        }
+
+    .custom-item-d {
+        background: white;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: auto;
+    }
+
+    #custom-2 {
+        width: 475px;
+        height: 290px;
+        margin: 0 auto;
+        border-radius: 12px;
+        }
+
+.plans-container {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 316px 316px 316px;
+    width: 960px;
+    height: auto;
+    background: white;
+    clear: both;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.plans-container img {
+    width: 316px;
+    height: 300px;
+}
+
+    .plans-item-a {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        background: #c0d8d8;
+        border: 1px solid black;
+        border-radius: 12px;
+        padding-top: 2px;
+        padding-bottom: 12px;
+        margin-bottom: 15px;
+        margin-top: 50px;
+    }
+
+.plans-item-b {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.plans-item-c {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.plans-item-d {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.oasis-caption {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.villa-caption {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.solarium-caption {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 700;
+}
+
+#about-splash {
+    height: 465px;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 0px 15px;
+}
+
+#about-splash-aside {
+    width: 340px;
+    height: 465px;
+    float: right;
+    background: blue;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 15px 0px;
+}
+
+#about-splash-aside p {
+    color: white;
+    padding: 10px 25px;
+}
+
+#about-splash-aside h2 {
+    text-align: center;
+    color: white;
+    font-style: oblique;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.about-container {
+    display: grid;
+    grid-gap: 14px;
+    grid-template-columns: 310px 310px 310px;
+    width: 960px;
+    height: auto;
+    background: white;
+    margin-bottom: 50px;
+    
+}
+
+.about-item {
+    height: 550px;
+    margin-top: 50px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 12px;   
+}
+
+#about-a.about-item {
+    grid-column: 1/2;
+    grid-row 1/2;
+}
+
+#about-b.about-item {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#about-c.about-item {
+    grid-column: 3/4;
+    grid-row: 1/2;  
+}
+
+.about-item img {
+    width: 128px;
+    height: 128px;
+    display: block;
+    margin: 30px auto 2px auto;
+}
+
+.about-item h2 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.about-item hr {
+    width: 200px;
+    margin: 15px auto;
+}
+
+#about-hr {
+    margin-bottom: 40px;
+}
+
+.about-item p {
+    width: 250px;
+    margin: 0 auto;
+}
+
+#contact-aside {
+	width: 360px;
+	height: auto;
+    border-radius: 12px;
+}
+
+.contact-container {
+    display: grid;
+    grid-gap: 0px;
+    width: 960px;
+    grid-template-columns: 600px 360px;
+}
+
+    .contact-item-a {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .contact-item-b {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 34px;
+    }
+
+    .contact-item-c {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+form {
+	max-width: 580px;
+}
+
+legend {
+	background: #f0ffff;
+	padding: 10px;
+	font-style: italic;
+	border: 1px solid black;
+	border-radius: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+fieldset {
+	margin: 12px;
+	padding: 10px 10px 10px 30px;
+    font-size: 1.5em;
+	border: 1px solid black;
+    border-radius: 12px; 
+	background: #c0d8d8;
+}
+
+label {
+	display: block;
+	margin: 5px 0px 8px 0px;
+	font-weight: bold;
+}
+
+#submit-button {
+   display: block;
+   font-size 2.0em;
+}
+
+#cat-using-computer {
+    border-radius: 12px;
+}
+
+#thanks-container {
+    border: 1px solid black;
+    border-radius: 12px;
+    background: #c0d8d8;
+    width: 960px;
+    height: auto;
+    padding: 10px;
+}
+
