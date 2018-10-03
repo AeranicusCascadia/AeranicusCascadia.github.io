@@ -1,0 +1,129 @@
+/* Table Builder */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #213442;
+	}
+	
+canvas {
+	display: block;
+	background-color: #FFFFFF;
+	width: auto;
+	margin: 30px auto;
+}	
+	
+#wrapper {
+	width: 90%;
+	height: auto;
+	margin: 15px auto;
+	padding: 15px;
+	background-color: #FFFFFF;
+	border: 5px solid #69CEDA;
+	border-style: groove;
+}	
+	
+h1 {
+	text-align: center;
+	color: #213442;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	background-color: #69CEDA;
+	width: 90%;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+	
+hr {
+	display: block;
+	margin-bottom: 25px;
+}
+	
+p {
+	margin: 10px 0px;
+}
+	
+table {
+	border: 2px solid black;
+	}
+
+tr:nth-child(n+2):nth-child(odd) {
+	background-color: #87CEFA;
+	color: #000000;
+	}
+	
+#my_table {
+	background: rgba(255,255,255,0.5);
+	border: none;
+	border-collapse: collapse;
+	margin: 25px auto 50px 25px;
+}
+
+#my_table .first {
+	border-bottom:3px solid black;
+}
+#my_table .first td {
+	border-bottom:3px solid black;
+}
+
+#my_table tr {
+	border-bottom: 0px solid black;
+}
+
+#my_table th, td {
+	border-left: 1px solid black;
+}
+
+#my_table th, td:first-child {
+	border-left: none;
+} 
+
+#my_table textarea {
+	background-color: transparent;
+	border: none; 
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	padding-bottom: 0px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+#my_table .first textarea {
+	color: black;
+	font-weight: bold;
+	
+}
+
+#my_table tr:nth-child(n+2) td:nth-child(n+2) textarea {
+	text-align: left;
+	
+}
+
+#my_table tr:nth-child(1) textarea {
+	height: 2.0em;
+	text-align: left;
+	font-weight: 600;
+}
+
+button {
+	padding: 10px 25px;
+	border: 2px solid #4295f4;
+	border-radius: 10px;
+	background-color: cornsilk;
+}
+
+#tableGeneratorButton {
+	font-weight: bold;
+}
+
+
+#inputs .prompt {
+	background-color: #42f4eb;
+	width: 50%;
+}

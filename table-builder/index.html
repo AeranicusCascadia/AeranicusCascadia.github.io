@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CPM Table Builder</title>
+<meta name="generator" content="Geany 1.27" />
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="pageLoadFunctions()">
+
+	<div id="wrapper">
+		<h1>CPM Table Graphic Builder</h1><br>
+		
+		<hr>
+	
+		<div id="inputs">
+			<p class="prompt">
+			Please select the starting size of your new table.<br>
+			A header row will be added automatically.
+			
+			</p>
+		
+		
+			<form>
+				<p>
+					Columns<br>
+					<input id="choose_cols" type="number" min="1" max="12" required>
+				</p>
+				<p>
+				<br>Rows:<br>
+					<input id="choose_rows" type="number" min="1" max="25" required>
+				</p>
+			</form>
+			<p>
+				<button type="button" onclick="addRowsCols()">Build starting empty table</button>
+			</p>
+		</div> <!-- close inputs div -->
+	
+	
+		<table id="my_table">
+		</table>
+	
+		<p><button id="addRow" type="button" onclick="addOneRow()">Click to add one row</button></p>
+		<p><button id ="tableGeneratorButton" type="button" onclick="generatePNG()">Click to generate table graphic</button></p>
+		
+<!-- Scripts -->	
+<script src="jquery-3.3.1.js"></script>
+<script src="html2canvas.js"></script>
+<script src="main.js"></script>
+
+<script>
+window.takeScreenShot = function() {
+    html2canvas(document.getElementById("my_table"), { //pass element to target
+        onrendered: function (canvas) {
+            document.body.appendChild(canvas);
+			
+        },
+        width:window.innerWidth,
+        height:window.innerHeight
+    });
+}
+</script>
+
+</div> <!-- close wrapper div -->
+
+</body>
+</html>
