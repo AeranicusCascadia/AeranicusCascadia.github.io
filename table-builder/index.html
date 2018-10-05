@@ -1,3 +1,5 @@
+<!-- GRID BASED -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,46 +11,97 @@
 
 <body onload="pageLoadFunctions()">
 
-	<div id="wrapper">
-		<h1>CPM Table Graphic Builder</h1><br>
-		
-		<hr>
+
+
+<div class="grid-container">
 	
-		<div id="inputs">
-			<p class="prompt">
-			Please select the starting size of your new table.<br>
-			A header row will be added automatically.
-			
-			</p>
-		
-		
-			<form>
+		<!-- Header -->
+		<div class="grid-item" id="box-1">
+			<h1>CPM Table Graphic Builder</h1><br>
+			<hr>
+		</div> <!-- close box-1 div -->
+	
+		<!-- Collapsible instruction panel -->
+		<div class="grid-item" id="box-2">
+			<button class="collapsible">View / Hide Instructions</button>
+			<div class="content">
 				<p>
-					Columns<br>
-					<input id="choose_cols" type="number" min="1" max="12" required>
+				Enter the number of rows and columns that you want your chart to have in the fields below. 
+				A header column will be created automatically, so you don't need to include it in your count.
 				</p>
 				<p>
-				<br>Rows:<br>
-					<input id="choose_rows" type="number" min="1" max="25" required>
+				Click on the 'Create empty table' button to start editing.
 				</p>
-			</form>
-			<p>
-				<button type="button" onclick="addRowsCols()">Build starting empty table</button>
-			</p>
-		</div> <!-- close inputs div -->
-	
-	
-		<table id="my_table">
-		</table>
-	
-		<p><button id="addRow" type="button" onclick="addOneRow()">Click to add one row</button></p>
-		<p><button id ="tableGeneratorButton" type="button" onclick="generatePNG()">Click to generate table graphic</button></p>
+				<p>
+				You may resize any text area within the table by clicking, holding, and dragging the 'handle' in the 
+				 bottom right corner of the text area. 
+				 The 'handles' are for editing only, and will not appear in your final graphic.
+				</p>
+				<p>				
+				Resizing the width of a text field will adjust the width of all
+				fields in the table to match. The height of each text field, however, can be adjusted individually
+				 to allow for multiple lines of text if desired.
+				</p>
+				<p>
+				You may add additional empty rows to the bottom of the table via the 'Add Row' button at any time before
+				 generating your table graphic.
+				</p>
+				<p>
+				When you are ready to create your downloadable table graphic, just click on the 'Generate Graphic' button.
+				The table will appear directly below the editing area.
+				</p>
+				<p>
+				To download, simply right-click on the graphic and select 'save image as..' Make sure that you 'Save as type: PNG.
+				</p>
+				<p>
+				You can name the file what you wish, and save it where you like.
+				</p>
+			</div> <!-- close content div -->
+		</div> <!-- close box-1 div -->
 		
+		<!-- Input bar to select blank table dimensions -->
+		<div class="grid-item" id="box-3">
+			<div id="inputs">
+				<p id="prompt">
+				Please select the size of your table...
+				</p>
+				<form>
+					<ul class="input-bar">
+						<li>
+						Rows: 
+						<input id="choose_rows" type="number" min="1" max="25" required>
+						</li>
+						<li>
+						Columns: 
+						<input id="choose_cols" type="number" min="1" max="12" required>
+						</li>
+						<li>
+						<button type="button" onclick="addRowsCols()">Build starting empty table</button>
+						</li>
+					</ul>
+				</form>
+					
+			</div> <!-- close inputs div -->
+		</div> <!-- close box-3 div -->
+		
+		<!-- Container for generated empty table -->
+		<div class="grid-item" id="box-4">
+			<table id="my_table">
+			</table>
+		</div> <!-- close box-4 div -->
+	
+		<!-- Button bar: Add Row and Generate Graphic -->
+		<div class="grid-item" id="box-5">
+			<button id="addRow" type="button" onclick="addOneRow()">Click to add one row</button>
+			<button id ="tableGeneratorButton" type="button" onclick="generatePNG()">Click to generate table graphic</button></p>
+		</div> <!-- Close box-5 div -->
+	 
 <!-- Scripts -->	
 <script src="jquery-3.3.1.js"></script>
 <script src="html2canvas.js"></script>
 <script src="main.js"></script>
 
+<!-- Calls Canvas2HTML which generates Canvas object by parsing "my_table" contents -->
 <script>
 window.takeScreenShot = function() {
     html2canvas(document.getElementById("my_table"), { //pass element to target
@@ -62,7 +115,8 @@ window.takeScreenShot = function() {
 }
 </script>
 
-</div> <!-- close wrapper div -->
+
+</div> <!-- close grid-container div -->
 
 </body>
 </html>
