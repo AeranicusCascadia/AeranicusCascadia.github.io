@@ -77,13 +77,21 @@ function setRowsCols() {
 	myTable.cols = parseInt(num_cols);
 }
 
+
 function tableFieldResize() {
+	// alert('Resize Event');
+
 	// Use mouseup listener instead of resize event
 	$("textarea").mouseup(function(){
 		var elem_width = $(this).width();
-		$("textarea").width(elem_width);
+		var elem_index = $(this).closest("td").index() +1;
+		$("td:nth-child(" + elem_index + ") textarea").width(elem_width);
+		
 	});
+	
 }
+
+
 
 
 // grid-item box-3 collapsible div
@@ -139,6 +147,7 @@ function buildInitialEmptyTable() {
 	hideInputsDiv(); // hide 'inputs' div
 	showtableGeneratorButton(); // show table generator button
 	showAddRowButton(); // show addRow button
+	
 	tableFieldResize(); // fire column onresize event
 	
 	} // close function
