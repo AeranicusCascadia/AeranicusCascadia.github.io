@@ -44,11 +44,11 @@ p {
 .grid-item#box-2 {
 	grid-row-start: 2;
 	grid-row-end: 3;
-	grid-column-start: 3;
+	grid-column-start: 1;
 	grid-column-end: 4;
 	border: none;
 	margin: 25px auto 0px auto;
-	width: 500px;
+	width: 90%;
 }
 
 .collapsible {
@@ -82,13 +82,13 @@ p {
 }
 
 .grid-item#box-3 {
-	grid-row-start: 2;
-	grid-row-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
 	grid-column-start: 1;
 	grid-column-end: 3;
 	min-width: 500px;
 	border: none;
-	margin-top: 25px;
+	margin-top: 50px;
 	
 }
 
@@ -127,20 +127,27 @@ hr {
 
 #prompt {
 	text-align: left;
-	margin-left: 65px;
+	margin-left: 50px;
+	margin-bottom: 15px;
+	text-decoration: underline;
+	font-weight: 600;
 }
 
 .input-bar {
 	list-style-type: none;
 	margin-top: 10px;
+	text-align: left;
+	margin-left: 50px;
 }
 
 .input-bar li {
-	display: inline;
+	display: inline-block;
 }
 
 .input-bar li:nth-child(1) {
 	margin-right: 15px;
+	
+	
 }
 
 #inputs button {

@@ -81,12 +81,13 @@ function setRowsCols() {
 function tableFieldResize() {
 	// alert('Resize Event');
 
-	// Use mouseup listener instead of resize event
+	/*
+	Mouse up event listener logs textarea width and passes to all parent elements (td) at its index
+	*/
 	$("textarea").mouseup(function(){
 		var elem_width = $(this).width();
 		var elem_index = $(this).closest("td").index() +1;
 		$("td:nth-child(" + elem_index + ") textarea").width(elem_width);
-		
 	});
 	
 }
@@ -162,7 +163,7 @@ function addOneRow() {
 		cell.innerHTML = '<textarea></textarea>'; 
 	}
 	
-	tableFieldResize();
+	//tableFieldResize();
 }	
 
 function addRowsCols() {
@@ -173,7 +174,7 @@ function addRowsCols() {
 
 function generatePNG() {
 	takeScreenShot();
-	hideTableGeneratorButton();
-	hideAddRowButton();
+	//hideTableGeneratorButton();
+	//hideAddRowButton();
 }
 
